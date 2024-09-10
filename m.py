@@ -14,7 +14,7 @@ import sys
 logging.basicConfig(level=logging.INFO)
 
 
-API_TOKEN = '6664791060:AAFBrFPbQzqPbLwBNfdb08RmDBwu3_8K-pw'
+API_TOKEN = '7097329647:AAFb-HnhTTxzBc65kaPX3Rbt_CcH3f4_jNo'
 
 AUTHORIZED_USERS = {}
 
@@ -38,7 +38,7 @@ def save_authorized_users():
 
 load_authorized_users()
 
-ADMIN_ID = 1994553848 
+ADMIN_ID = ["1703682672"]
 
 async def check_authorization(user_id):
     if user_id not in AUTHORIZED_USERS:
@@ -140,7 +140,7 @@ async def user_info(message: Message):
         else:
             approval_expiry_str = "Not approved"
     else:
-        approval_expiry_str = "𝙊𝙥𝙥𝙨 𝙉𝙤𝙩 𝙖𝙥𝙥𝙧𝙤𝙫𝙚𝙙 𝘾𝙤𝙣𝙩𝙖𝙘𝙩 @Paid_hacks69"
+        approval_expiry_str = "𝙊𝙥𝙥𝙨 𝙉𝙤𝙩 𝙖𝙥𝙥𝙧𝙤𝙫𝙚𝙙 𝘾𝙤𝙣𝙩𝙖𝙘𝙩 @KONG_MODS_OWNER"
 
     username = message.from_user.username
     await message.answer(f"🔖 𝙍𝙤𝙡𝙚: 𝙐𝙨𝙚𝙧\n"
@@ -152,7 +152,7 @@ attack_process = None
 last_attack_time = 0
 async def welcome_user(message: Message):
     if not await check_authorization(message.from_user.id):
-        await message.answer("𝘼𝙘𝙘𝙚𝙨𝙨 𝙙𝙚𝙣𝙞𝙚𝙙\n 𝙔𝙤𝙪 𝙖𝙧𝙚 𝙣𝙤𝙩 𝙖𝙪𝙩𝙝𝙤𝙧𝙞𝙯𝙚𝙙 𝙩𝙤 𝙪𝙨𝙚 𝙩𝙝𝙞𝙨 𝙗𝙤𝙩\n 𝙠𝙞𝙣𝙙𝙡𝙮 𝘿𝙢 @Kalua_786 𝙏𝙤 𝙂𝙚𝙩 𝘼𝙘𝙘𝙚𝙨𝙨")
+        await message.answer("𝘼𝙘𝙘𝙚𝙨𝙨 𝙙𝙚𝙣𝙞𝙚𝙙\n 𝙔𝙤𝙪 𝙖𝙧𝙚 𝙣𝙤𝙩 𝙖𝙪𝙩𝙝𝙤𝙧𝙞𝙯𝙚𝙙 𝙩𝙤 𝙪𝙨𝙚 𝙩𝙝𝙞𝙨 𝙗𝙤𝙩\n 𝙠𝙞𝙣𝙙𝙡𝙮 𝘿𝙢 @KONG_MODS_OWNER 𝙏𝙤 𝙂𝙚𝙩 𝘼𝙘𝙘𝙚𝙨𝙨")
         return
 
     await message.answer(f"𝙒𝙚𝙡𝙘𝙤𝙢𝙚 𝙩𝙤 𝘽𝙂𝙈𝙄 𝘼𝙩𝙩𝙖𝙘𝙠 𝘽𝙤𝙩! 🚀\n\n"
@@ -167,17 +167,17 @@ LAST_ATTACK_TIME = {}
 
 async def bgmi_attack(message: Message):
     if not await check_authorization(message.from_user.id):
-        await message.answer("𝘼𝙘𝙘𝙚𝙨𝙨 𝙙𝙚𝙣𝙞𝙚𝙙\n 𝙔𝙤𝙪 𝙖𝙧𝙚 𝙣𝙤𝙩 𝙖𝙪𝙩𝙝𝙤𝙧𝙞𝙯𝙚𝙙 𝙩𝙤 𝙪𝙨𝙚 𝙩𝙝𝙞𝙨 𝙗𝙤𝙩\n 𝙠𝙞𝙣𝙙𝙡𝙮 𝘿𝙢 @Paid_hacks69 𝙏𝙤 𝙂𝙚𝙩 𝘼𝙘𝙘𝙚𝙨𝙨")
+        await message.answer("𝘼𝙘𝙘𝙚𝙨𝙨 𝙙𝙚𝙣𝙞𝙚𝙙\n 𝙔𝙤𝙪 𝙖𝙧𝙚 𝙣𝙤𝙩 𝙖𝙪𝙩𝙝𝙤𝙧𝙞𝙯𝙚𝙙 𝙩𝙤 𝙪𝙨𝙚 𝙩𝙝𝙞𝙨 𝙗𝙤𝙩\n 𝙠𝙞𝙣𝙙𝙡𝙮 𝘿𝙢 @KONG_MODS_OWNER 𝙏𝙤 𝙂𝙚𝙩 𝘼𝙘𝙘𝙚𝙨𝙨")
         return
     if message.from_user.id not in AUTHORIZED_USERS:
-        await message.answer("𝘼𝙘𝙘𝙚𝙨𝙨 𝙙𝙚𝙣𝙞𝙚𝙙\n 𝙔𝙤𝙪 𝙖𝙧𝙚 𝙣𝙤𝙩 𝙖𝙪𝙩𝙝𝙤𝙧𝙞𝙯𝙚𝙙 𝙩𝙤 𝙪𝙨𝙚 𝙩𝙝𝙞𝙨 𝙗𝙤𝙩\n 𝙠𝙞𝙣𝙙𝙡𝙮 𝘿𝙢 @Paid_hacks69 𝙏𝙤 𝙂𝙚𝙩 𝘼𝙘𝙘𝙚𝙨𝙨‌.")
+        await message.answer("𝘼𝙘𝙘𝙚𝙨𝙨 𝙙𝙚𝙣𝙞𝙚𝙙\n 𝙔𝙤𝙪 𝙖𝙧𝙚 𝙣𝙤𝙩 𝙖𝙪𝙩𝙝𝙤𝙧𝙞𝙯𝙚𝙙 𝙩𝙤 𝙪𝙨𝙚 𝙩𝙝𝙞𝙨 𝙗𝙤𝙩\n 𝙠𝙞𝙣𝙙𝙡𝙮 𝘿𝙢 @KONG_MODS_OWNER 𝙏𝙤 𝙂𝙚𝙩 𝘼𝙘𝙘𝙚𝙨𝙨‌.")
         return
 
     current_time = time.time()
 
-    if message.from_user.id in LAST_ATTACK_TIME and current_time - LAST_ATTACK_TIME[message.from_user.id] < 0:
-        remaining_seconds = 0 - (current_time - LAST_ATTACK_TIME[message.from_user.id])
-        minutes, seconds = divmod(remaining_seconds, 0)
+    if message.from_user.id in LAST_ATTACK_TIME and current_time - LAST_ATTACK_TIME[message.from_user.id] < 200:
+        remaining_seconds = 200 - (current_time - LAST_ATTACK_TIME[message.from_user.id])
+        minutes, seconds = divmod(remaining_seconds, 60)
         time_str = f"{int(minutes)} 𝙢𝙞𝙣𝙪𝙩𝙚𝙨 𝙖𝙣𝙙 {int(seconds)} "
         await message.answer(f"𝙔𝙤𝙪 𝙢𝙪𝙨𝙩 𝙬𝙖𝙞𝙩 {time_str}. 𝙨𝙚𝙘𝙤𝙣𝙙𝙨 𝙗𝙚𝙛𝙤𝙧𝙚 𝙨𝙩𝙖𝙧𝙩𝙞𝙣𝙜 𝙖𝙣𝙤𝙩𝙝𝙚𝙧 𝙖𝙩𝙩𝙖𝙘𝙠")
         return
@@ -216,10 +216,10 @@ async def bgmi_attack(message: Message):
 
 async def bgmi_stop(message: Message):
     if not await check_authorization(message.from_user.id):
-        await message.answer("𝘼𝙘𝙘𝙚𝙨𝙨 𝙙𝙚𝙣𝙞𝙚𝙙\n 𝙔𝙤𝙪 𝙖𝙧𝙚 𝙣𝙤𝙩 𝙖𝙪𝙩𝙝𝙤𝙧𝙞𝙯𝙚𝙙 𝙩𝙤 𝙪𝙨𝙚 𝙩𝙝𝙞𝙨 𝙗𝙤𝙩\n 𝙠𝙞𝙣𝙙𝙡𝙮 𝘿𝙢 @Paid_hacks69 𝙏𝙤 𝙂𝙚𝙩 𝘼𝙘𝙘𝙚𝙨𝙨")
+        await message.answer("𝘼𝙘𝙘𝙚𝙨𝙨 𝙙𝙚𝙣𝙞𝙚𝙙\n 𝙔𝙤𝙪 𝙖𝙧𝙚 𝙣𝙤𝙩 𝙖𝙪𝙩𝙝𝙤𝙧𝙞𝙯𝙚𝙙 𝙩𝙤 𝙪𝙨𝙚 𝙩𝙝𝙞𝙨 𝙗𝙤𝙩\n 𝙠𝙞𝙣𝙙𝙡𝙮 𝘿𝙢 @KONG_MODS_OWNER 𝙏𝙤 𝙂𝙚𝙩 𝘼𝙘𝙘𝙚𝙨𝙨")
         return
     if message.from_user.id not in AUTHORIZED_USERS:
-        await message.answer("𝘼𝙘𝙘𝙚𝙨𝙨 𝙙𝙚𝙣𝙞𝙚𝙙\n 𝙔𝙤𝙪 𝙖𝙧𝙚 𝙣𝙤𝙩 𝙖𝙪𝙩𝙝𝙤𝙧𝙞𝙯𝙚𝙙 𝙩𝙤 𝙪𝙨𝙚 𝙩𝙝𝙞𝙨 𝙗𝙤𝙩\n 𝙠𝙞𝙣𝙙𝙡𝙮 𝘿𝙢 @Paid_hacks69 𝙏𝙤 𝙂𝙚𝙩 𝘼𝙘𝙘𝙚𝙨𝙨‌.")
+        await message.answer("𝘼𝙘𝙘𝙚𝙨𝙨 𝙙𝙚𝙣𝙞𝙚𝙙\n 𝙔𝙤𝙪 𝙖𝙧𝙚 𝙣𝙤𝙩 𝙖𝙪𝙩𝙝𝙤𝙧𝙞𝙯𝙚𝙙 𝙩𝙤 𝙪𝙨𝙚 𝙩𝙝𝙞𝙨 𝙗𝙤𝙩\n 𝙠𝙞𝙣𝙙𝙡𝙮 𝘿𝙢 @KONG_MODS_OWNER 𝙏𝙤 𝙂𝙚𝙩 𝘼𝙘𝙘𝙚𝙨𝙨‌.")
         return
     # Rest of the bgmi stop code
     global attack_process
